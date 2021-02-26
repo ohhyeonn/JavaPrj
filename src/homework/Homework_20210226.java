@@ -1,4 +1,6 @@
-public class Hello {
+package homework;
+
+public class Homework_20210226 {
 
 	public static void main(String[] args) {
 
