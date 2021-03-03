@@ -32,7 +32,7 @@ public class Homework_20210302 {
 	
 	System.out.printf("취미 : ");
 	hobby = scan.nextLine();
-	
+	System.out.println("───────────────────────────");
 
 
 
@@ -44,7 +44,7 @@ public class Homework_20210302 {
 	System.out.printf("나이 : %s\n",age);
 	System.out.printf("지역 : %s\n",city);
 	System.out.printf("취미 : %s\n",hobby);
-	System.out.printf("제이름은 %s 나이는 %s 이고요 사는곳은 %s 취미는 %s 입니다.\n",name, age, city, hobby);
+	System.out.printf("요약 : 제이름은 %s 나이는 %s 이고요 사는곳은 %s 취미는 %s 입니다.\n",name, age, city, hobby);
 	System.out.println("───────────────────────────");
 	}
 	

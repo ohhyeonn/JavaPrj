@@ -1,5 +1,7 @@
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.Scanner;
 
 
@@ -25,8 +27,19 @@ public class Hello {
 		eng = scan1.nextInt();
 		math = scan1.nextInt();
 		
+		scan1.close();
+		fis.close();
 		
 		
+		FileOutputStream fos = new FileOutputStream("C:\\tool\\eclipse-workspace\\JavaPrj\\data.txt");
+		PrintStream pst = new PrintStream(fos);		
+		kor = kor +1 ;
+		eng = eng +1;
+		pst.printf("%d %d %d", kor , eng, math);
+		
+		pst.close();
+		fos.close();
+	
 		
 		
 		
@@ -72,8 +85,7 @@ public class Hello {
 		
 		
 		
-		
-		
+
 
 
 	}
