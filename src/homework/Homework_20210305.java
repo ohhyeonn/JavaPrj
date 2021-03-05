@@ -20,10 +20,12 @@ public class Homework_20210305 {
 		int temp;
 
 		Scanner scan = new Scanner(System.in);
-
-		System.out.print("양의 정수를 입력하시오 : ");
+		
+	
+		System.out.print("1을 제외한 양의 정수를 입력하시오 : ");
 		num = scan.nextInt();
 		int number = num;
+
 
 		while (i <= number) {
 
