@@ -36,34 +36,53 @@ public class Homework_20210308 {
 				System.out.println("┌─────────────────────────┐");
 				System.out.println("│        성적 입력		  │");
 				System.out.println("└─────────────────────────┘");
+				
+				int i=0;
+				
+				WOW: while (true) {
+					
 
-				do {
+					switch (i) {
 
-					System.out.print("국어성적을 입력하세요 : ");
-					kor = Integer.parseInt(scan.nextLine());
+					case 0:
+						System.out.print("국어성적을 입력하세요 : ");
+						kor = Integer.parseInt(scan.nextLine());
 
-					if (!(kor <= 100 && kor >= 0))
-						System.out.println("0 ~ 100 범위의 값만 입력 받을수 있습니다");
-				} while (!(kor <= 100 && kor >= 0));
+						if (!(kor <= 100 && kor >= 0))
+							System.out.println("0 ~ 100 범위의 값만 입력 받을수 있습니다");
+						else
+							i++;
 
-				do {
+						break;
 
-					System.out.print("영어성적을 입력하세요 : ");
-					eng = Integer.parseInt(scan.nextLine());
+					case 1:
+						System.out.print("영어성적을 입력하세요 : ");
+						eng = Integer.parseInt(scan.nextLine());
 
-					if (!(eng <= 100 && eng >= 0))
-						System.out.println("0 ~ 100 범위의 값만 입력 받을수 있습니다");
-				} while (!(eng <= 100 && eng >= 0));
+						if (!(eng <= 100 && eng >= 0))
+							System.out.println("0 ~ 100 범위의 값만 입력 받을수 있습니다");
+						else 
+							i++;
 
-				do {
-					System.out.print("수학성적을 입력하세요 : ");
-					math = Integer.parseInt(scan.nextLine());
+						break;
 
-					if (!(math <= 100 && math >= 0))
-						System.out.println("0 ~ 100 범위의 값만 입력 받을수 있습니다");
-				} while (!(math <= 100 && math >= 0));
+					case 2:
+						
+						System.out.print("수학성적을 입력하세요 : ");
+						math = Integer.parseInt(scan.nextLine());
 
-				System.out.println("───────────────────────────");
+						if (!(math <= 100 && math >= 0)) {
+							System.out.println("0 ~ 100 범위의 값만 입력 받을수 있습니다");
+						} else {
+							System.out.println("───────────────────────────");
+							break WOW;
+						}
+
+					}
+
+				
+
+				}
 				break;
 
 			case 2:
