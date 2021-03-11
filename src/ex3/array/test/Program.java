@@ -93,7 +93,7 @@ public class Program {
 		System.out.println();
 		
 		/// scan 의 hasNextLine();  하면 더 완성도 높은 코드가능하다
-		
+		/// 이거for문이렇게하지말고 while 써야된다!!!! ㅇㅋ!!!
 		for(int i=0; fscan.hasNextLine(); i++) {
 			names[i] = fscan.nextLine();
 			System.out.printf("%s", names[i]);
